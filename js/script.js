@@ -23,7 +23,7 @@ window.onload = function () {
   const params = new URLSearchParams(document.location.search)
 
   // input
-  const volume = params.get("r")
+  const radius = params.get("r")
   console.log(radius)
 
   // process
