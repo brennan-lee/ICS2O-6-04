@@ -10,14 +10,27 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-PWA-Test/sw.js", {
-    scope: "/ICS2O-PWA-Test/",
+  navigator.serviceWorker.register("/ICS2O-6-04/sw.js", {
+    scope: "/ICS2O-6-04/",
   })
 }
 
-/**
- * This function displays an alert.
- */
-function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+"use strict"
+
+window.onload = function() {
+  // this calculates volume of a sphere
+
+  const params = new URLSearchParams(document.location.search)
+
+  // input
+  const radius = params.get('r')
+  console.log(radius)
+
+  // process
+  const area = (4.0 / 3.0) * Math.PI * Math.pow(r, 3)
+  const dimensions = "<ul>\n<li>radius = " + radius 
+
+  // output
+  document.getElementById('dimensions').innerHTML = dimensions
+  document.getElementById('volume').innerHTML = 'volume is: ' + volume + ' mm²'
 }
