@@ -15,22 +15,22 @@ if (navigator.serviceWorker) {
   })
 }
 
-"use strict"
+;("use strict")
 
-window.onload = function() {
+window.onload = function () {
   // this calculates volume of a sphere
 
   const params = new URLSearchParams(document.location.search)
 
   // input
-  const radius = params.get('r')
+  const radius = params.get("r")
   console.log(radius)
 
   // process
   const area = (4.0 / 3.0) * Math.PI * Math.pow(r, 3)
-  const dimensions = "<ul>\n<li>radius = " + radius 
+  const dimensions = "<ul>\n<li>radius = " + radius
 
   // output
-  document.getElementById('dimensions').innerHTML = dimensions
-  document.getElementById('volume').innerHTML = 'volume is: ' + volume + ' mm²'
+  document.getElementById("dimensions").innerHTML = dimensions
+  document.getElementById("volume").innerHTML = "volume is: " + volume + " mm²"
 }
