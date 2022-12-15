@@ -28,7 +28,7 @@ window.onload = function () {
 
   // process
   const radius = (4.0 / 3.0) * Math.PI * Math.pow(r, 3)
-  const dimensions = "<ul>\n<li>radius = " + radius 
+  const dimensions = "<ul>\n<li>radius = " + radius
 
   // output
   document.getElementById("dimensions").innerHTML = dimensions
