@@ -23,11 +23,11 @@ window.onload = function () {
   const params = new URLSearchParams(document.location.search)
 
   // input
-  const radius = params.get("r")
+  const volume = params.get("r")
   console.log(radius)
 
   // process
-  const radius = (4.0 / 3.0) * Math.PI * Math.pow(r, 3)
+  const volume = (4.0 / 3.0) * Math.PI * Math.pow(r, 3)
   const dimensions = "<ul>\n<li>radius = " + radius
 
   // output
